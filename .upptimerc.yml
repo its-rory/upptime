@@ -1,31 +1,35 @@
-# Change these first
-owner: its-rory # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: its-rory 
+repo: upptime 
 
+# ==========================================
+# 监控节点配置（已修正缩进、层级和变量语法）
+# ==========================================
 sites:
   - name: Los Angeles VPS
-    url: https://panelouis.luoverse.cn
+    url: $LOS_ANGELES_VPS_URL
   - name: Los Angeles VPN
-    url: https://www.google.com
-      - name: HK VPN
-    url: https://www.google.com
-      - name: Singapore VPS
-    url: https://www.google.com
+    url: $LOS_ANGELES_VPN_URL
+  - name: HK VPN
+    url: $HK_VPN_URL
+  - name: Singapore VPS
+    url: $SINGAPORE_VPS_URL
 
+# ==========================================
+# 状态页外观与路径配置（已修正域名冲突）
+# ==========================================
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  # 如果你有自己的域名，才解开下行注释并修改；否则保持注释状态
+  cname: luoverse.cn
+  
+  # 无自定义域名时，必须解开 baseUrl 并正确对应你的仓库名
+  baseUrl: /upptime
+  
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: 实时系统状态监控
+  introTitle: "主机与服务可用性综合观测面板"
+  introMessage: "本页面完全基于 GitHub Actions 基础设施实现分布式全自动探活，数据每 5 分钟更新一次。"
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: 状态总览
+      href: /upptime/
+    - title: GitHub 仓库
+      href: https://github.com/its-rory/upptime
