@@ -7,12 +7,15 @@ repo: upptime
 sites:
   - name: Los Angeles VPS
     url: $LOS_ANGELES_VPS_URL
+    __dangerous__disable_verify_host: true
   - name: Los Angeles VPN
     url: $LOS_ANGELES_VPN_URL
   - name: HK VPN
     url: $HK_VPN_URL
+    __dangerous__disable_verify_host: true
   - name: Singapore VPS
     url: $SINGAPORE_VPS_URL
+    __dangerous__disable_verify_host: true
 
 # ==========================================
 # 状态页外观与路径配置（已修正域名冲突）
