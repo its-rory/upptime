@@ -19,7 +19,7 @@ sites:
 # ==========================================
 status-website:
   # 如果你有自己的域名，才解开下行注释并修改；否则保持注释状态
-  cname: luoverse.cn
+  # cname: luoverse.cn
   
   # 无自定义域名时，必须解开 baseUrl 并正确对应你的仓库名
   baseUrl: /upptime
