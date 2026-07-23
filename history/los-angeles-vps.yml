@@ -1,7 +1,7 @@
 url: $LOS_ANGELES_VPS_URL
-status: down
-code: 502
-responseTime: 62
-lastUpdated: 2026-07-22T10:54:47.813Z
+status: up
+code: 200
+responseTime: 1549
+lastUpdated: 2026-07-23T01:06:53.189Z
 startTime: 2026-07-09T05:04:37.946Z
 generator: Upptime <https://github.com/upptime/upptime>
